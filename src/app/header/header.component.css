@@ -1,0 +1,54 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.navbar {
+    background: rgb(34, 66, 206);
+    color: #fff;
+    padding: 15px auto;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: violet;
+}
+
+.droplist {
+    position: absolute;
+  margin-right: 40px;
+}
+
+.droplist li a {
+    color: rgb(34, 66, 206);
+    padding-left: 20px;
+}
+
+.droplist li {
+   padding: 0;
+}
+
+.droplist li a:hover {
+    background: aqua;
+}
+
+.navbar-right {
+    margin-right: 50px;
+}
+
+a {
+    cursor: pointer;
+}
+

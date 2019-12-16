@@ -1,0 +1,20 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a routerLink="/" class="navbar-brand">Recipe Book</a>
+        </div>
+        <ul class="nav navbar-nav menu custom">
+            <li routerLinkActive="active"><a routerLink="/recipes">Recipes</a></li>
+            <li ><a routerLink="/shopping-list">Shopping List</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown" appDropdown>
+                <a class="dropdown-toggle" role="button" data-toggle="dropdown">Manage</a>
+                <ul class="dropdown-menu droplist">
+                    <li><a>Save Data</a></li>
+                    <li><a>Feth Data</a></li>
+                </ul>
+            </li>  
+        </ul>
+    </div>
+</nav>

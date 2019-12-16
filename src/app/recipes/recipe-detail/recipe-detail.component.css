@@ -1,0 +1,11 @@
+img {
+    max-height: 300px;
+}
+
+.drop-items a:hover {
+    background: aqua;
+}
+
+a {
+    cursor: pointer;
+}
