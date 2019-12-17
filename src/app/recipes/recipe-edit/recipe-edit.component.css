@@ -1,0 +1,8 @@
+.btn-custom {
+    margin-right: 15px;
+}
+
+input.ng-invalid, 
+textarea.ng-invalid {
+    border: 1px solid red;
+}
