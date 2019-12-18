@@ -15,9 +15,9 @@ export class DataStorageService {
     }
 
     fetchRecipes() {
-        this.http.get('https://ng-recipe-b5d3c.firebaseio.com/recipes.json')
+        return this.http.get<Recipe[]>('https://ng-recipe-b5d3c.firebaseio.com/recipes.json')
                 .subscribe( recipes => {
-                    console.log(recipes)
+                   this.recipeService.setRecipes(recipes)
                 })
     }
 

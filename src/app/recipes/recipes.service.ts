@@ -26,6 +26,7 @@ export class RecipeService {
                 new Ingredient('Meat', 3)
             ])
       ];
+    
 
       constructor(private shopListService: SpoppingListService) {  }
 
@@ -33,8 +34,9 @@ export class RecipeService {
           return this.recipes.slice();
       }
 
-      setRecipes() {
-        
+      setRecipes(recipes: Recipe[]) {
+        this.recipes = recipes;
+        this.recipesChanged.next(this.recipes.slice())
       }
 
       addIngredientsToShoppingList(ingredients: Ingredient[]) {
